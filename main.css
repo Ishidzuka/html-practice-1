@@ -9,6 +9,7 @@
   --btn-text: #ffffff;
   --btn-color: #30383b;
   --border-color: #e3e6ea;
+  --review-back: #fff9f8;
 }
 
 ul {
@@ -19,6 +20,7 @@ ul {
 
 a {
   text-decoration: none;
+  display: block;
 }
 
 h1,
@@ -159,6 +161,14 @@ p {
   padding: 0;
 }
 
+.hero,
+.about,
+.grid,
+.popular,
+.reviews {
+  display: none;
+}
+
 .card-desc {
   min-width: 280px;
   margin: 0 auto;
@@ -198,4 +208,123 @@ p {
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 50px;
+}
+
+.review-list {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.review-card {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.review-text {
+  width: 70%;
+  text-align: center;
+}
+
+.review-card div {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.reviews {
+  background-color: var(--review-back);
+  padding: 135px 0;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 95px;
+}
+
+.team-card img {
+  width: 360px;
+  height: 435px;
+}
+
+.img-wrapper {
+  overflow: hidden;
+}
+
+.team-desc {
+  text-align: center;
+  padding: 35px 0;
+  background-color: #ffffff;
+  position: absolute;
+  width: 300px;
+  height: 170px;
+  left: 30px;
+  bottom: -112px;
+}
+
+.team-desc h3 {
+  margin-bottom: 15px;
+}
+
+.team-soc {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.team-soc li:not(:last-child) {
+  margin-right: 13px;
+}
+
+.team-soc li {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+  border-radius: 50%;
+  padding: ;
+}
+
+.team-card:hover .team-soc {
+  display: flex;
+}
+
+.team-card:hover .team-desc {
+  box-shadow: 0px 24px 46px -11px rgba(49, 61, 105, 0.2);
+  transition: all 400ms ease-in-out;
+  bottom: -60px;
+}
+
+.team-card {
+  position: relative;
+}
+
+.team {
+  padding-bottom: 215px;
+}
+
+.team-soc li:hover {
+  background-color: var(--back-color);
+}
+
+.team-soc a {
+  cursor: pointer;
+  padding: 10px;
+  color: white;
 }
