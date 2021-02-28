@@ -26,6 +26,7 @@ ul {
 a {
   text-decoration: none;
   display: block;
+  color: inherit;
 }
 
 h1,
@@ -34,6 +35,10 @@ h3,
 p {
   margin: 0;
   padding: 0;
+}
+
+address {
+  font-style: normal;
 }
 
 .page-nav,
@@ -164,15 +169,6 @@ p {
   margin-top: 40px;
   margin-bottom: 30px;
   padding: 0;
-}
-
-.hero,
-.about,
-.grid,
-.popular,
-.reviews,
-.team .service-form {
-  display: none;
 }
 
 .card-desc {
@@ -450,12 +446,83 @@ textarea {
   background-color: var(--back-color);
 }
 
+.getin {
+  padding-top: 145px;
+  padding: 70px;
+}
+
+.getin h2,
+.getin p {
+  text-align: center;
+}
+
+.getin .container > p {
+  width: 80%;
+  margin: 45px auto 100px;
+}
+
+.get-address {
+  display: flex;
+}
+
+.get-address address {
+  width: 33%;
+  margin-right: 130px;
+}
+
+.get-form {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.get-form input,
+.get-form textarea {
+  width: 555px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+}
+
+.get-form textarea {
+  margin-bottom: 0;
+}
+
+.get-form button {
+  padding: 20px 47px;
+  margin-top: 30px;
+  border-radius: 32px;
+  border: none;
+  background-color: var(--btn-color);
+  color: white;
+}
+
+.get-form button:hover {
+  background-color: var(--back-color);
+}
+
+.contacts-data {
+  display: flex;
+  flex-flow: column;
+  padding-left: 165px;
+}
+
+.contacts-data > li:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.contacts-data a,
+.contacts-data li {
+  color: gray;
+  line-height: 1.5;
+}
+
 .hero,
 .about,
 .grid,
 .popular,
 .reviews,
 .team,
-.service-form {
+.service-form,
+.blog {
   display: none;
 }
