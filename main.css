@@ -12,6 +12,11 @@
   --review-back: #fff9f8;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -165,7 +170,8 @@ p {
 .about,
 .grid,
 .popular,
-.reviews {
+.reviews,
+.team .service-form {
   display: none;
 }
 
@@ -327,4 +333,129 @@ img {
   cursor: pointer;
   padding: 10px;
   color: white;
+}
+
+.service-form {
+  background-image: url(/images/blogbg.png);
+  background-position: left;
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  padding: 130px 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--review-back);
+}
+
+input,
+select,
+textarea {
+  border: none;
+  border-bottom: 1px solid;
+  padding: 10px;
+  background: transparent;
+  width: 320px;
+}
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  padding-left: 100px;
+}
+
+.form input:nth-child(2n + 1),
+.form select {
+  margin-right: 20px;
+}
+
+.form textarea {
+  width: 80%;
+}
+
+.form button {
+  margin-top: 40px;
+  background-color: var(--back-color);
+  padding: 20px 30px;
+  border-radius: 32px;
+  color: white;
+  border: none;
+}
+
+.form input,
+.form select {
+  margin-bottom: 20px;
+}
+
+.blog {
+  padding-top: 145px;
+  padding: 70px;
+}
+
+.blog h2,
+.blog p {
+  text-align: center;
+}
+
+.blog .container > p {
+  width: 80%;
+  margin: 45px auto 100px;
+}
+
+.blog-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-card {
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 40px;
+  width: 360px;
+}
+
+.blog-card:hover {
+  box-shadow: 0px 24px 46px -11px rgba(49, 61, 105, 0.2);
+  transition: all 400ms ease-in-out;
+  border: none;
+}
+
+.blog-card .img-wrapper {
+  height: 320px;
+}
+
+.blog-desc {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.blog-desc h3 {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.blog-card a {
+  background-color: var(--btn-color);
+  border-radius: 32px;
+  border: none;
+  color: white;
+  padding: 18px 40px;
+}
+
+.blog-card a:hover {
+  background-color: var(--back-color);
+}
+
+.hero,
+.about,
+.grid,
+.popular,
+.reviews,
+.team,
+.service-form {
+  display: none;
 }
