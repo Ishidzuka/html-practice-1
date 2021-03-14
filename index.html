@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rufina:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
         integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
         crossorigin="anonymous" />
@@ -15,10 +18,10 @@
     <nav class="page-nav"> 
         <a href="/"><img src="./images/Icon.svg" alt="logo"><p class="logotext">Leospa</p></a>
         <ul class="nav-list">
-            <li class="nav-link"><a href="">HOME</a></li>
-            <li class="nav-link"><a href="">ABOUT</a></li>
-            <li class="nav-link"><a href="">FEATURES</a></li>
-            <li class="nav-link"><a href="">CONTACT</a></li>
+            <li class="nav-link"><a href="">home</a></li>
+            <li class="nav-link"><a href="">about</a></li>
+            <li class="nav-link"><a href="">features</a></li>
+            <li class="nav-link"><a href="">contact</a></li>
         </ul>
     </nav>
 </div>
@@ -26,15 +29,16 @@
 <main>
 <section class="hero">
  <div class="container">
-    <p class="hero-text">SPA & BEAUTY CENTER</p>
-    <h1 class="hero-title">Beauty and success starts here.</h1>
-     <p class="hero-desc">Together creeping heaven upon third dominion be upon won`t darkness rule
-     behold it created good saw after she`d Our set living</p>
-    <div>
-    <a href="" class="hero-btn">RESERVE NOW →</a>
-    <img src="images/play.png" alt="">
-    <button type="button" class="hero-story">Watch our story</button>
-    </div>
+        <div class="hero-text-container">
+            <p class="hero-text">spa & beauty center</p>
+                <h1 class="hero-title">Beauty and success starts here.</h1>
+                    <p class="hero-desc">Together creeping heaven upon third dominion be upon won`t darkness rule
+                        behold it created good saw after she`d Our set living</p>
+                <div class="hero-btn-container">
+                    <a href="" class="hero-btn">RESERVE NOW →</a>
+                    <button type="button" class="hero-story"><span class="story-btn"><img src="images/play.png" alt=""></span>Watch our story</button>
+                </div>
+        </div>
 </div>
 </section>
 <section class="about">
@@ -141,8 +145,8 @@
 </section> 
 <section class="team">
     <div class="container">
-        <h2>Expirienced Team</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae, voluptatibus ducimus eius consectetur quis dolorum labore unde laboriosam deserunt? 
+        <h2 class="team-title">Expirienced Team</h2>
+        <p class="team-title-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae, voluptatibus ducimus eius consectetur quis dolorum labore unde laboriosam deserunt? 
             Optio natus esse facilis sit architecto iusto cumque eaque dolor?</p>
             <ul class="team-list">
                 <li class="team-card">
@@ -303,7 +307,7 @@
 </div>
 </section>
 </main>
-<footer>
+<footer class="footer">
     <div class="container">
 <nav class="footer-nav">
     <a href="/"><img src="./images/Icon.svg" alt="logo">
