@@ -15,6 +15,9 @@
   --team-title-text: #9b9b9b;
   --main-font-roboto: 'Roboto', sans-serif;
   --sec-font-rufina: 'Rufina', serif;
+  --about-desc: #929292;
+  --about-text: #adadad;
+  --card-desc: #888888;
 }
 
 body {
@@ -23,17 +26,16 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--sec-font-rufina);
-  line-height: 1.25;
-  font-weight: 700;
-  font-size: 60px;
   color: var(--team-title);
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 ul {
@@ -85,6 +87,7 @@ address {
 }
 
 .hero-text-container {
+  width: 555px;
 }
 
 .hero-text {
@@ -146,13 +149,33 @@ address {
   display: inline-block;
 }
 
+.about-title {
+  color: var(--about-desc);
+  line-height: 2.7;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+
 .about-head {
   margin-top: 40px;
   margin-bottom: 50px;
+  font-size: 42px;
+  line-height: 1.3;
+  color: var(--team-title);
+  font-weight: 700;
 }
 
 .about-desc {
-  margin-bottom: 70px;
+  color: var(--about-text);
+  width: 863px;
+  font-size: 15px;
+  line-height: 1.87;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 75px;
 }
 
 .about-btn {
@@ -194,13 +217,22 @@ address {
 .pop-head {
   text-align: center;
   margin-bottom: 30px;
+  color: var(--team-title);
+  font-size: 42px;
+  line-height: 1.6;
+  font-weight: 700;
 }
 
 .pop-desc {
   text-align: center;
-  width: 650px;
   margin: 0 auto;
   margin-bottom: 95px;
+  width: 674px;
+  height: 43px;
+  font-size: 15px;
+  line-height: 27px;
+  color: var(--about-text);
+  font-weight: 300;
 }
 
 .pop-cards li {
@@ -222,6 +254,10 @@ address {
   margin-top: 40px;
   margin-bottom: 30px;
   padding: 0;
+  font-size: 22px;
+  line-height: 0.8;
+  color: var(--team-title);
+  font-weight: 700;
 }
 
 .card-desc {
@@ -229,6 +265,12 @@ address {
   margin: 0 auto;
   margin-bottom: 45px;
   text-align: center;
+  width: 292px;
+  height: 72px;
+  font-size: 14px;
+  line-height: 1.93;
+  font-weight: 300;
+  color: var(--card-desc);
 }
 
 .card-btn {
@@ -239,6 +281,11 @@ address {
   display: inline-block;
   justify-content: center;
   margin: 0 auto;
+}
+
+.card-btn:hover {
+  background-color: var(--back-color);
+  transition: background-color 0.25s ease-out;
 }
 
 .card {
@@ -269,20 +316,29 @@ address {
   display: flex;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .review-card {
   display: flex;
   flex-flow: column;
-  width: 100%;
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+  width: 100%;
+  padding-left: 68px;
+  padding-right: 68px;
 }
 
 .review-text {
-  width: 70%;
+  width: 100%;
   text-align: center;
+  font-size: 18px;
+  line-height: 1.944;
+  color: var(--team-title);
+  font-weight: 400;
+  font-family: var(--sec-font-rufina);
+  padding: 0 15px;
 }
 
 .review-card div {
@@ -312,10 +368,16 @@ img {
   margin-top: 140px;
   margin-bottom: 30px;
   color: var(--team-title);
+  font-size: 42px;
+  font-weight: 700;
 }
 
 .team-title-text {
   color: var(--team-title-text);
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 300;
+  padding: 0 165px;
 }
 
 .team-list {
